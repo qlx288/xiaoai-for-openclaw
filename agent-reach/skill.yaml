@@ -1,0 +1,24 @@
+# skill.yaml - Agent Reach
+name: agent-reach
+version: 1.0.0
+author: Panniantong
+description: 给 AI Agent 一键装上互联网能力。可以搜索全网、读网页、YouTube 字幕、Twitter 搜索、GitHub 读取等。完全免费！
+license: MIT
+
+permissions:
+  - network
+  - shell
+
+entryPoint:
+  type: shell
+  path: agent-reach
+
+triggers:
+  keywords:
+    - 搜索
+    - 网上找
+    - 网页
+    - YouTube
+    - Twitter
+    - B站
+    - 搜一下

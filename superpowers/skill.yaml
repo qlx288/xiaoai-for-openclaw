@@ -1,0 +1,25 @@
+# skill.yaml - Superpowers
+name: superpowers
+version: 1.0.0
+author: maloqab
+description: Superpowers - 专业软件开发工作流。包含14种开发技能：头脑风暴、规划、TDD、调试、代码审查等。让AI像专业程序员一样工作。
+license: MIT
+
+permissions:
+  - filesystem
+  - shell
+
+entryPoint:
+  type: natural
+  prompt: 你好！我是 Superpowers，一个专业软件开发工作流系统。我会确保你遵循标准开发流程：先头脑风暴、规划、写测试、再编码、完成前验证。请按流程工作。
+
+triggers:
+  keywords:
+    - 写代码
+    - 编程
+    - 开发
+    - 调试
+    - bug
+    - 测试
+    - 审查
+    - 规划

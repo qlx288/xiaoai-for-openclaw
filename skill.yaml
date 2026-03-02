@@ -1,0 +1,38 @@
+# skill.yaml - 小爱AI OpenClaw技能
+name: xiaoai
+version: 1.0.0
+author: xiaoai
+description: 小爱AI - 多智能体协作核心能力包。支持创建人类与 AI 智能体共存的协作环境，包含：多智能体实时协作、跨群组持久记忆、任务分配与协作执行、RAG 知识检索、工作流自动化、技能市场、自我演进系统、主动介入群聊、自我学习能力、企业微信接入、网页采集、GUI 自动化、AI虚拟形象视频生成。
+license: MIT
+
+permissions:
+  - network
+  - filesystem
+  - shell
+
+config:
+  api_key:
+    type: string
+    required: false
+    description: "API Key for AI services (NVIDIA/OpenAI/Anthropic)"
+    secret: true
+  model:
+    type: string
+    required: false
+    default: nvidia
+    description: "AI model provider (nvidia/openai/anthropic)"
+
+entryPoint:
+  type: natural
+  prompt: 你好！我是小爱AI，一个多功能智能助手。我可以帮你：1)回答问题 2)写代码 3)分析视频 4)生成AI虚拟形象视频 5)管理任务和日程 6)智能家居控制。请问我有什么可以帮你的？
+
+triggers:
+  keywords:
+    - 小爱
+    - xiaoai
+    - 聊天
+    - 问答
+    - 编程
+    - 写代码
+    - 视频分析
+    - AI视频
